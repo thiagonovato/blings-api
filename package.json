@@ -4,10 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node dist/server.js",
+    "start": "node dist/src/server.js",
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn src/server.ts",
     "postinstall": "tsc",
-    "watch-node": "nodemon dist/server.js",
+    "watch-node": "nodemon dist/src/server.js",
     "watch-ts": "tsc -w"
   },
   "dependencies": {

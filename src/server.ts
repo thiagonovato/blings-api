@@ -4,12 +4,11 @@ import { contactRouter } from './routes/contacts.routes'
 const app = express()
 
 app.get('/', (req, res) => {
-  return res.send('Hello World!')
+  return res.send('API Blings')
 })
 
 app.use(contactRouter)
 
-
-app.listen(process.env.PORT || 3000, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log('Server started!')
 })
