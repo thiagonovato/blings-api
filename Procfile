@@ -1,1 +1,1 @@
-web: yarn tsc && node dist/src/server.js
+web: node dist/src/server.js
