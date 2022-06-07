@@ -1,6 +1,5 @@
 import { Contact } from '../model/contact'
 import contactFile from '../../data/contacts.json'
-import { format, parseISO } from 'date-fns'
 import age from '../utils/age'
 
 interface IContactListDto {
