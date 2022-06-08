@@ -26,7 +26,9 @@ class ContactRepository {
           return age(contact[key]) === parseInt(paramsForSearch[key])
         }
       })
-    }, paramsForSearch)
+    }, paramsForSearch).map(item => {
+      return { ...item, age: age(item.birthday) }
+    })
 
     return result
   }
