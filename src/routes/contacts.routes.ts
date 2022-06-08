@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import { ContactRepository } from '../repositories/contacts'
+import { ContactRepository } from '../repositories/contacts.repository'
 
 const contactRouter = Router()
 const contactRepository = new ContactRepository()
